@@ -591,7 +591,7 @@ html[dir="ltr"] .input-search .ico_ {
 
 .modal-header .close {
   color: #ffffff!important;
-  font-size: 25px;
+  font-size: 20px;
   position: absolute;
   top: 30px;
   padding: 0;
@@ -686,6 +686,23 @@ html[dir="ltr"] .input-search .ico_ {
 
 .input-search input::placeholder {
   color: #dadada;
+}
+@media(max-width:1200px){
+  .header{
+    flex-wrap: wrap;
+  }
+  .header .logo{
+    order: 1;
+  }
+  .header .header_right {
+    order: 3;
+    margin: auto;
+    padding-top: 10px;
+
+  }
+  .header .header_left{
+    order: 2;
+  }
 }
 @media(max-width:767px) {
   header {
@@ -843,7 +860,7 @@ html[dir="ltr"] .dropdown-lang {
   margin-left: 30px;
 }
 .navbar_ .lang {
-  width: 100%;
+  width: 80px;
 }
 .nav_ul{
   padding: 135px 30px 20px;
@@ -1304,6 +1321,10 @@ html[dir="rtl"] .new .owl-carousel button.owl-dot,
 .bestseller .owl-carousel button.owl-dot{
   margin-left: 5px;
 }
+html[dir="ltr"] .new .owl-carousel button.owl-dot,
+.bestseller .owl-carousel button.owl-dot{
+  margin-left: 5px;
+}
 .new .owl-carousel button.owl-dot.active,
 .bestseller .owl-carousel button.owl-dot.active{
   background-color: rgb(175, 123, 137);
@@ -1385,6 +1406,13 @@ html[dir="ltr"] .bestseller .owl-next {
 
   bottom: 20px;
 
+}
+.add_shopping{
+  height: 40px;
+}
+.btn_more {
+  width: 150px;
+  height: 40px;
 }
 }
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1500,7 +1528,7 @@ html[dir="ltr"] .bestseller .owl-next {
 }
 .brands .img_brands {
   max-width: 100% !important;
-  opacity: 77%;
+  opacity: 30%;
   filter: grayscale(1);
   transition: .5s;
   width: auto !important;
@@ -1678,7 +1706,8 @@ footer .down_f {
   color: rgb(0, 0, 0);
   position: relative;
   display: flex;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  text-transform: capitalize;
 } 
 footer .down_f:hover{
   text-decoration: none;
@@ -1727,6 +1756,7 @@ footer .down_f:hover{
   line-height: 24px;
   text-decoration: none; 
   line-height: 30px;
+  text-transform: capitalize;
 }
 
 html[dir="rtl"] .f_list .nest_list li a{
@@ -1796,7 +1826,7 @@ footer .f_list .nest_list {
   }
 
   footer .down_f{
-    margin-top: 20px;
+    margin-top: 10px;
   }
   .input_div {
     margin-bottom: 30;
@@ -1906,5 +1936,5 @@ html[dir="ltr"] .copyright .right p{
 }
 
 .preloader-sa img {
-  width: 200px;
+  max-width: 100%;
 }
