@@ -172,7 +172,9 @@ html[dir="ltr"] .anc_nav {
   background-color: rgb(175, 123, 137);
   color: rgb(255, 255, 255);
 }
-
+.bt_user:focus{
+  outline: 0;
+} 
 html[dir="rtl"] .bt_user {
   margin-right: 10px;
 }
@@ -1308,7 +1310,7 @@ html[dir="ltr"] .price span{margin-right: 5px;}
 .bestseller .owl-dots{
   display: block;
   position: absolute;
-  bottom: 10px;
+  bottom: 20px;
   transform: translatex(-50%);
   font-size: 18px;
   color: #ffffff;
@@ -1409,14 +1411,13 @@ html[dir="ltr"] .bestseller .owl-next {
   display: none;
 }
 .new_div {
-  margin-bottom: 50px;
+  margin-bottom: 55px;
 }
 .bestseller_parant{
   margin-bottom: 10px;
 }
 
 .bestseller .owl-dots{
-
   bottom: 20px;
 
 }
@@ -1429,6 +1430,9 @@ html[dir="ltr"] .bestseller .owl-next {
 }
 .title_ p {
   font-size: 22px;
+}
+.anc_new {
+padding: 15px 0 8px ;
 }
 }
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
