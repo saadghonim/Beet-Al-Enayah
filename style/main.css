@@ -928,6 +928,19 @@ margin-right: 3px;
 .d_none_mob{
   display: block;
 }
+.header{
+  flex-wrap: nowrap;
+}
+.header .logo{
+  order: unset;
+}
+.header .header_right {
+  order: unset;
+
+}
+.header .header_left{
+  order: unset;
+}
 }
 
 @media(max-width:567px) {
