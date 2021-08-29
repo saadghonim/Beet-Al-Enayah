@@ -472,9 +472,12 @@ display: none;
 .parant_input_search{
   background-color: rgb(247, 247, 247);
 }
+.input_s{
+  margin-bottom: 15px;
+  display: none;
+}
 .input_divinput_div_search{
   position: relative;
-  display: none;
   height: 45px;
 }
 
@@ -538,7 +541,10 @@ html[dir="ltr"] .search_span span {
 @media(max-width:767px) {
   header {
       position: relative;
-      padding: 15px 0 15px;
+      padding: 0;
+  }
+  .header{
+    padding: 15px 0;
   }
   .navbar_ {
       position: absolute;

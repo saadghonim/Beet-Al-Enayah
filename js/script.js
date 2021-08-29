@@ -36,7 +36,7 @@ $(".signin_mob").click(function(){
     $(".drop_user").slideToggle(500);
 })
 $(".icon_search").click(function(){
-    $(".input_divinput_div_search").slideToggle(500);
+    $(".input_s").slideToggle(500);
 })
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~end header~~~~~~~~~~~~~~~~~~~~~~
