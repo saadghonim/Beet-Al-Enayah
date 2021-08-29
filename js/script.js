@@ -32,7 +32,12 @@ if ($(window).width() <= 992) {
     $(".dropdown-content-lang").slideToggle(400);
 })
 };
-
+$(".signin_mob").click(function(){
+    $(".drop_user").slideToggle(500);
+})
+$(".icon_search").click(function(){
+    $(".input_divinput_div_search").slideToggle(500);
+})
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~end header~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */
@@ -62,29 +67,6 @@ if ($(window).width() <= 992) {
     }
 })
 
-// ~~~~~~~~~~~~~~~~~min_slider~~~~~~~~~~~
-$('.min_slider .owl-carousel').owlCarousel({
-  loop:true,
-  margin:10,
-  nav:true,
-  rtl:true,
-  rtl: $("html").attr("dir") == "rtl" ? true : false,
-  responsive:{
-      0:{
-          items:1
-      },
-      600:{
-          items:1
-      },
-      1000:{
-          items:1
-      }
-  }
-})
-
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-~~~~~~~~~~~~~~~~~~~end sliders ~~~~~~~~~~~~~~~~~~~~~~
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */
 
 
 
@@ -166,7 +148,7 @@ $('.brands .owl-carousel').owlCarousel({
   rtl: true,
   responsive: {
       0: {
-          items: 3
+          items: 2
       },
       600: {
           items: 4
