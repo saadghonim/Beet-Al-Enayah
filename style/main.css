@@ -465,7 +465,7 @@ display: none;
     width: 100%;
     border: 1px solid transparent;
     color: rgb(117, 117, 117);
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 400;
     padding: 0 20px;
 }
@@ -499,7 +499,8 @@ html[dir="ltr"] .search_span  {
 .search_span{
   position: absolute;
   border-radius: 7px;
-  color: rgb(175, 123, 137);
+  color: rgb(33, 33, 33);
+  font-size: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
