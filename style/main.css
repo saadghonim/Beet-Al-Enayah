@@ -470,45 +470,45 @@ display: none;
     padding: 0 20px;
 }
 .parant_input_search{
-  background-color: rgb(247, 247, 247);
+  position: relative;
 }
+
 .input_s{
-  margin: 15px 0;
   display: none;
+  background-color: rgb(250 250 250);
+  z-index: 9999;
+  height: 45px;
+position: absolute;
+left: 0;
+right: 0;
 }
 .input_divinput_div_search{
-  position: relative;
+  position: absolute;
   height: 45px;
+  z-index: 999;
+  width: 100%;
 }
 
 html[dir="rtl"] .search_span  {
-  left: 0;
+  left: 20px;
 }
 
 html[dir="ltr"] .search_span  {
-  right: 0;
+  right: 20px;
 }
 .search_span{
   position: absolute;
-  top: 0;
   border-radius: 7px;
-  background-color: rgb(175, 123, 137);
-  color: rgb(255, 255, 255);
-  width: 43px;
-  height: 43px;
+  color: rgb(175, 123, 137);
   display: flex;
   justify-content: center;
   align-items: center;
-  top: 1px;
+  top: 16px;
   transition: .5s;
   -webkit-transition: .5s;
   -moz-transition: .5s;
   -ms-transition: .5s;
   -o-transition: .5s;
-}
-.search_span:hover{
-  background-color: rgb(216 166 179);
-  color: rgb(247, 247, 247);
 }
 html[dir="rtl"] .search_span span {
   left: 2px;
@@ -615,10 +615,21 @@ html[dir="ltr"] .search_span span {
   }
   .nav_ul li {
       margin-bottom: 10px;
+      width: 100%;
   }
   .anc_nav {
       font-size: 18px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
   }
+  .user_hover{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
   html[dir="rtl"] .anc_nav {
       margin-left: 0px;
   }
@@ -669,6 +680,7 @@ html[dir="ltr"] .search_span span {
     position: absolute;
     top: 19px;
   }
+
   html[dir="rtl"] .lang {
     margin-right: 0;
       right: 0;
@@ -775,7 +787,11 @@ margin-right: 3px;
   order: unset;
 }
 .signin_mob{
-  display: block;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-transform: capitalize;
 }
 html[dir="rtl"] .signin_mob{
   text-align: right;
@@ -846,19 +862,25 @@ text-align: left;
 }
 .user_ .user_hover{
   display: none;
+  width: 100%;
+}
+.navbar_ .bt_user {
+  width: 100%;
+}
+.navbar_ .bt_user:hover{
+  color: rgb(175, 123, 137);;
 }
 .drop_user .anc_user:first-child{
   display: block;
 }
 .input_s{
-  margin: 0 0 15px ;
   display: none;
 }
 }
 
 @media(max-width:567px) {
   .header .logo img {
-      width: 165px;
+      width: 195px;
   }
   html[dir="rtl"] .bt_user {
       margin-right: 5px;
@@ -1894,4 +1916,23 @@ html[dir="ltr"] .copyright .right p{
 
 .preloader-sa img {
   max-width: 100%;
+}
+
+.close-search::after {
+  content: "";
+  font-family: Linearicons-Free;
+  color: #ffffff;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.open-search::after {
+  content: "";
+  font-family: Linearicons-Free;
+  color: rgb(33, 33, 33);
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: 400;
+
 }

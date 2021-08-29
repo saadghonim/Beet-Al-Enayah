@@ -37,6 +37,12 @@ $(".signin_mob").click(function(){
 })
 $(".icon_search").click(function(){
     $(".input_s").slideToggle(500);
+    $(this).children("span").toggleClass("open-search close-search");
+    
+})
+$(".overlay-box").click(function() {
+    $(".moboverlay").addClass("open-search")
+    $(".moboverlay").removeClass("close-search")
 })
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~end header~~~~~~~~~~~~~~~~~~~~~~
