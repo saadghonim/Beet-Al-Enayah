@@ -78,7 +78,7 @@ html[dir="ltr"] body {
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 header {
-  padding: 15px 0 30px ;
+  padding: 15px 0 15px ;
 }
 
 .header {
@@ -473,7 +473,7 @@ display: none;
   background-color: rgb(247, 247, 247);
 }
 .input_s{
-  margin-bottom: 15px;
+  margin: 15px 0;
   display: none;
 }
 .input_divinput_div_search{
@@ -838,7 +838,20 @@ html[dir="ltr"] .navbar_ .bt_user{
   padding: 0;
   margin: 0;
 }
+html[dir="rtl"] .drop_user {
+  text-align: right;
+}
+html[dir="ltr"] .drop_user {
+text-align: left;
+}
 .user_ .user_hover{
+  display: none;
+}
+.drop_user .anc_user:first-child{
+  display: block;
+}
+.input_s{
+  margin: 0 0 15px ;
   display: none;
 }
 }
